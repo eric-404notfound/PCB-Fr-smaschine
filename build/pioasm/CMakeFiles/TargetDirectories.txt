@@ -1,7 +1,7 @@
-/home/Dev/Pico/CNC/build/pioasm/CMakeFiles/pioasm.dir
-/home/Dev/Pico/CNC/build/pioasm/CMakeFiles/edit_cache.dir
-/home/Dev/Pico/CNC/build/pioasm/CMakeFiles/rebuild_cache.dir
-/home/Dev/Pico/CNC/build/pioasm/CMakeFiles/list_install_components.dir
-/home/Dev/Pico/CNC/build/pioasm/CMakeFiles/install.dir
-/home/Dev/Pico/CNC/build/pioasm/CMakeFiles/install/local.dir
-/home/Dev/Pico/CNC/build/pioasm/CMakeFiles/install/strip.dir
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm/CMakeFiles/pioasm.dir
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm/CMakeFiles/edit_cache.dir
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm/CMakeFiles/list_install_components.dir
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm/CMakeFiles/install.dir
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm/CMakeFiles/install/local.dir
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm/CMakeFiles/install/strip.dir

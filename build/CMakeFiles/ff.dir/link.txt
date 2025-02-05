@@ -1,2 +1,0 @@
-/usr/bin/arm-none-eabi-ar qc libff.a CMakeFiles/ff.dir/libs/fatfs/source/ff.c.obj CMakeFiles/ff.dir/libs/fatfs/source/diskio.c.obj
-/usr/bin/arm-none-eabi-ranlib libff.a

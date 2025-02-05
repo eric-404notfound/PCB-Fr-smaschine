@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/Dev/Pico/CNC/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/dev/rp2040/PCB-Fr-smaschine/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

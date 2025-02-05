@@ -41,7 +41,7 @@ static const struct pio_program stepper_x_program = {
     .instructions = stepper_x_program_instructions,
     .length = 15,
     .origin = -1,
-    .pio_version = 0,
+    .pio_version = stepper_x_pio_version,
 #if PICO_PIO_VERSION > 0
     .used_gpio_ranges = 0x0
 #endif
@@ -88,7 +88,7 @@ static const struct pio_program stepper_y_program = {
     .instructions = stepper_y_program_instructions,
     .length = 15,
     .origin = -1,
-    .pio_version = 0,
+    .pio_version = stepper_y_pio_version,
 #if PICO_PIO_VERSION > 0
     .used_gpio_ranges = 0x0
 #endif
@@ -133,7 +133,7 @@ static const struct pio_program stepper_z_program = {
     .instructions = stepper_z_program_instructions,
     .length = 13,
     .origin = -1,
-    .pio_version = 0,
+    .pio_version = stepper_z_pio_version,
 #if PICO_PIO_VERSION > 0
     .used_gpio_ranges = 0x0
 #endif

@@ -1,5 +1,5 @@
-/home/Dev/Pico/CNC/build/pioasm-install/pioasm/pioasm
-/home/Dev/Pico/CNC/build/pioasm-install/pioasm/pioasmTargets.cmake
-/home/Dev/Pico/CNC/build/pioasm-install/pioasm/pioasmTargets-release.cmake
-/home/Dev/Pico/CNC/build/pioasm-install/pioasm/pioasmConfig.cmake
-/home/Dev/Pico/CNC/build/pioasm-install/pioasm/pioasmConfigVersion.cmake
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm-install/pioasm/pioasm
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm-install/pioasm/pioasmTargets.cmake
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm-install/pioasm/pioasmTargets-release.cmake
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm-install/pioasm/pioasmConfig.cmake
+/home/dev/rp2040/PCB-Fr-smaschine/build/pioasm-install/pioasm/pioasmConfigVersion.cmake

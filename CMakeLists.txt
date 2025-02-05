@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.13)
 
-set(PICOTOOL_FETCH_FROM_GIT_PATH "/home/Dev/picotool/bin")
+set(PICOTOOL_FETCH_FROM_GIT_PATH "/home/dev/picotool/bin")
 #set(PICO_NO_PICOTOOL 1)
 
-set(PICO_SDK_PATH "/home/Dev/pico-sdk")
+set(PICO_SDK_PATH "/home/dev/rp2040/pico-sdk")
 
 include(${PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/Dev/Pico/CNC
+# Install script for directory: /home/dev/rp2040/PCB-Fr-smaschine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/Dev/Pico/CNC/build/pico-sdk/cmake_install.cmake")
-  include("/home/Dev/Pico/CNC/build/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/cmake_install.cmake")
+  include("/home/dev/rp2040/PCB-Fr-smaschine/build/pico-sdk/cmake_install.cmake")
+  include("/home/dev/rp2040/PCB-Fr-smaschine/build/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/Dev/Pico/CNC/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dev/rp2040/PCB-Fr-smaschine/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
