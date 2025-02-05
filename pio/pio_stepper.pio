@@ -1,0 +1,196 @@
+.program stepper_x
+.side_set 1 opt
+start:
+
+    pull block
+
+    out pins, 1     ; Extrahiere das oberste Bit und legt es auf pins (direction)
+    out y, 15       ; Extrahiere  16-30 Bits in Y (anzahl schritte)
+    out x, 16        ; Extrahiere die oberen 0-15 Bits in X (delay)
+            
+    mov isr, x        ; Kopiere die unteren 16 Bits in das OSR
+
+    irq 2         ; Setze IRQ 1, um y zu triggern
+    wait 1 irq 1  ; Warte auf IRQ 0 von y
+    
+     
+
+loop:
+    jmp !y start      ; Wenn y = 0, dann gehe zu start
+    mov x, isr   
+
+high_delay:
+    nop [7]  side 1        ;8
+    jmp x-- high_delay[1]  ;10 //obacht
+
+    mov x, isr     
+
+low_delay:
+    nop [7] side 0         ;8
+    jmp x-- low_delay [1]  ;10
+
+    jmp y-- loop
+
+.program stepper_y
+.side_set 1 opt
+start:
+
+    pull block
+
+    out pins, 1     ; Extrahiere das oberste Bit und legt es auf pins (direction)
+    out y, 15       ; Extrahiere  16-30 Bits in Y (anzahl schritte)
+    out x, 16        ; Extrahiere die oberen 0-15 Bits in X (delay)
+
+    mov isr, x        ; Kopiere die unteren 16 Bits in das OSR
+
+    irq 1         ; Setze IRQ 1, um x zu triggern
+    wait 1 irq 2        ; Warte auf IRQ 2 von x
+
+loop:
+    jmp !y start      ; Wenn y = 0, dann gehe zu start
+    mov x, isr   
+
+high_delay:
+    nop [7]  side 1        ;8
+    jmp x-- high_delay[1]  ;10 //obacht
+
+    mov x, isr     
+
+low_delay:
+    nop [7] side 0         ;8
+    jmp x-- low_delay [1]  ;10
+
+    jmp y-- loop
+
+.program stepper_z
+.side_set 1 opt
+start:
+
+    pull block
+
+    out pins, 1     ; Extrahiere das oberste Bit und legt es auf pins (direction)
+    out y, 15       ; Extrahiere  16-30 Bits in Y (anzahl schritte)
+    out x, 16        ; Extrahiere die oberen 0-15 Bits in X (delay)
+
+    mov isr, x        ; Kopiere die unteren 16 Bits in das OSR
+     
+loop:
+    jmp !y start      ; Wenn y = 0, dann gehe zu start
+    mov x, isr   
+
+high_delay:
+    nop [7]  side 1        ;8
+    jmp x-- high_delay[1]  ;10 //obacht
+
+    mov x, isr     
+
+low_delay:
+    nop [7] side 0         ;8
+    jmp x-- low_delay [1]  ;10
+
+    jmp y-- loop
+
+
+% c-sdk {
+static inline void stepper_x_program_init(PIO pio, uint sm, uint offset, uint step_pin, uint dir_pin, uint MICROSTEPS) {
+
+    pio_sm_config c = stepper_x_program_get_default_config(offset);
+
+    // Konfiguriere die Direction-Pins
+    pio_gpio_init(pio, dir_pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, dir_pin, 1, true);
+    pio_sm_set_out_pins(pio, sm, dir_pin, 1);
+    sm_config_set_out_pins(&c, dir_pin, 1);
+
+
+    // Konfiguriere die Side-Set-Pins (für step)
+    pio_gpio_init(pio, step_pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, step_pin, 1, true);
+
+    pio_sm_set_sideset_pins(pio, sm, step_pin);
+    sm_config_set_sideset_pins(&c, step_pin);
+
+
+
+    // Konfiguriere die FIFO
+    sm_config_set_out_shift(&c, false, true, 32);
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_TX);
+
+    //Initialisiere die State Machine
+    pio_sm_init(pio, sm, offset, &c);
+
+    // Setze den Clock-Divider für 100 ms pro Takt (10 Hz)
+    pio_sm_set_clkdiv(pio, sm, 125 / (2 *MICROSTEPS)); // clkdiv = 1,250,000 ->>>>>>>>>>>
+
+    // Set the state machine running
+    pio_sm_set_enabled(pio, sm, true);
+}
+
+static inline void stepper_y_program_init(PIO pio, uint sm, uint offset, uint step_pin, uint dir_pin, uint MICROSTEPS) {
+
+    pio_sm_config c = stepper_y_program_get_default_config(offset);
+
+    // Konfiguriere die Direction-Pins
+    pio_gpio_init(pio, dir_pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, dir_pin, 1, true);
+    pio_sm_set_out_pins(pio, sm, dir_pin, 1);
+    sm_config_set_out_pins(&c, dir_pin, 1);
+
+
+    // Konfiguriere die Side-Set-Pins (für step)
+    pio_gpio_init(pio, step_pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, step_pin, 1, true);
+
+    pio_sm_set_sideset_pins(pio, sm, step_pin);
+    sm_config_set_sideset_pins(&c, step_pin);
+
+
+
+    // Konfiguriere die FIFO
+    sm_config_set_out_shift(&c, false, true, 32);
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_TX);
+
+    //Initialisiere die State Machine
+    pio_sm_init(pio, sm, offset, &c);
+
+    // Setze den Clock-Divider für 100 ms pro Takt (10 Hz)
+    pio_sm_set_clkdiv(pio, sm, 125 / (2 *MICROSTEPS)); // clkdiv = 1,250,000
+
+    // Set the state machine running
+    pio_sm_set_enabled(pio, sm, true);
+}
+
+static inline void stepper_z_program_init(PIO pio, uint sm, uint offset, uint step_pin, uint dir_pin, uint MICROSTEPS) {
+
+    pio_sm_config c = stepper_z_program_get_default_config(offset);
+
+    // Konfiguriere die Direction-Pins
+    pio_gpio_init(pio, dir_pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, dir_pin, 1, true);
+    pio_sm_set_out_pins(pio, sm, dir_pin, 1);
+    sm_config_set_out_pins(&c, dir_pin, 1);
+
+
+    // Konfiguriere die Side-Set-Pins (für step)
+    pio_gpio_init(pio, step_pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, step_pin, 1, true);
+
+    pio_sm_set_sideset_pins(pio, sm, step_pin);
+    sm_config_set_sideset_pins(&c, step_pin);
+
+
+
+    // Konfiguriere die FIFO
+    sm_config_set_out_shift(&c, false, true, 32);
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_TX);
+
+    //Initialisiere die State Machine
+    pio_sm_init(pio, sm, offset, &c);
+
+    // Setze den Clock-Divider für 100 ms pro Takt (10 Hz)
+    pio_sm_set_clkdiv(pio, sm, 125 / (2 *MICROSTEPS)); // clkdiv = 1,250,000
+
+    // Set the state machine running
+    pio_sm_set_enabled(pio, sm, true);
+}
+%}
