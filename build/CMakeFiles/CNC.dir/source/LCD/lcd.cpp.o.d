@@ -66,7 +66,6 @@ CMakeFiles/CNC.dir/source/LCD/lcd.cpp.o: \
  /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
- /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \

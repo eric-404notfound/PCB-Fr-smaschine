@@ -62,7 +62,6 @@ CMakeFiles/CNC.dir/main.cpp.o: /home/dev/rp2040/PCB-Fr-smaschine/main.cpp \
  /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
- /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /home/dev/rp2040/PCB-Fr-smaschine/source/CNC/CNC_Controler.h \
  /home/dev/rp2040/PCB-Fr-smaschine/source/CNC/Axis.h \
  /home/dev/rp2040/PCB-Fr-smaschine/source/CNC/Stepper.h \

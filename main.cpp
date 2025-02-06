@@ -17,6 +17,7 @@ int main() {
 
     stdio_init_all();
     sleep_ms(1000);
+    printf("Hallo welt");
 
     gpio_init(PICO_DEFAULT_LED_PIN);
     gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
@@ -25,12 +26,16 @@ int main() {
     int x_1 = 0;
     int y_1 = 0;
 
-    gpio_init(2);
-    gpio_set_dir(2 , GPIO_IN);
-    gpio_pull_up(2);
-    
+    uint64_t volatile c = 0;
     
     testing_lcd();
+
+    x_1++;
+    while (1){
+        c++;
+        sleep_ms(10);
+    };
+    
     
 
     return 0;

@@ -64,7 +64,6 @@ CMakeFiles/CNC.dir/source/SD_Karte/Files.cpp.o: \
  /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
- /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /usr/include/newlib/c++/13.2.1/string \
  /usr/include/newlib/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/newlib/c++/13.2.1/bits/stringfwd.h \

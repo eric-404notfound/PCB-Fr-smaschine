@@ -982,360 +982,38 @@ CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: /home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/CNC.dir/flags.make
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o: CMakeFiles/CNC.dir/flags.make
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c
+
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.i
+
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.s
+
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o: CMakeFiles/CNC.dir/flags.make
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c
+
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c > CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.i
+
+CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.s
 
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -1349,7 +1027,7 @@ CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -1363,7 +1041,7 @@ CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -1377,7 +1055,7 @@ CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c
 
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -1391,7 +1069,7 @@ CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsystem.c.i: cmake_force
@@ -1405,7 +1083,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffsyst
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunicode.c.i: cmake_force
@@ -1419,7 +1097,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ffunic
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.i: cmake_force
@@ -1433,7 +1111,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff15/source/ff.c.s
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c.i: cmake_force
@@ -1447,7 +1125,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_spi.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_logging.c.i: cmake_force
@@ -1461,7 +1139,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/demo_log
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.i: cmake_force
@@ -1475,7 +1153,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/spi.c.s:
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.c.i: cmake_force
@@ -1489,7 +1167,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/sd_card.
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.i: cmake_force
@@ -1503,7 +1181,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/sd_driver/crc.c.s:
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.i: cmake_force
@@ -1517,7 +1195,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/glue.c.s: cmak
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.i: cmake_force
@@ -1531,7 +1209,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/f_util.c.s: cm
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.i: cmake_force
@@ -1545,7 +1223,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/ff_stdio.c.s: 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.i: cmake_force
@@ -1559,7 +1237,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/my_debug.c.s: 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.o: /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.o -MF CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.o.d -o CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.o -c /home/dev/rp2040/PCB-Fr-smaschine/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c
 
 CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.i: cmake_force
@@ -1573,7 +1251,7 @@ CMakeFiles/CNC.dir/libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.s: cmake
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o: CMakeFiles/CNC.dir/flags.make
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o: /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o: CMakeFiles/CNC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o -MF CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o.d -o CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.o -c /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c
 
 CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.i: cmake_force
@@ -1652,31 +1330,8 @@ CNC_OBJECTS = \
 "CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o" \
 "CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o" \
 "CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o" \
-"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o" \
+"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o" \
+"CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o" \
 "CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o" \
 "CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o" \
 "CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o" \
@@ -1765,31 +1420,8 @@ CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_printf/
 CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
-CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/stdio_rtt.c.o
+CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/SEGGER/RTT/SEGGER_RTT.c.o
 CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
 CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
 CNC.elf: CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
@@ -1812,7 +1444,7 @@ CNC.elf: CMakeFiles/CNC.dir/build.make
 CNC.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 CNC.elf: /home/dev/rp2040/pico-sdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 CNC.elf: CMakeFiles/CNC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Linking CXX executable CNC.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/rp2040/PCB-Fr-smaschine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Linking CXX executable CNC.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CNC.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h /home/dev/rp2040/PCB-Fr-smaschine/build/CNC.elf > CNC.dis
 	/usr/bin/arm-none-eabi-objdump -d /home/dev/rp2040/PCB-Fr-smaschine/build/CNC.elf >> CNC.dis

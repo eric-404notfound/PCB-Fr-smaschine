@@ -31,7 +31,8 @@ target_include_directories(CNC PUBLIC
 )
 
 pico_enable_stdio_uart(CNC OFF)
-pico_enable_stdio_usb(CNC ON)
+pico_enable_stdio_usb(CNC OFF)
+pico_enable_stdio_rtt(CNC ON)
 
 pico_generate_pio_header(CNC ${CMAKE_CURRENT_LIST_DIR}/pio/pio_stepper.pio)
 

@@ -71,4 +71,5 @@ CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/lib/tinyusb/src/tusb.c.o: \
  /home/dev/rp2040/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h \
  /home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_private.h \
  /home/dev/rp2040/pico-sdk/lib/tinyusb/src/device/usbd_pvt.h \
- /home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_private.h
+ /home/dev/rp2040/pico-sdk/lib/tinyusb/src/common/tusb_private.h \
+ /usr/include/newlib/ctype.h

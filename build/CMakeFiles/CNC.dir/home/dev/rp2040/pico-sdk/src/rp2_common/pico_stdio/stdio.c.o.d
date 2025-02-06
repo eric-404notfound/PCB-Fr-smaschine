@@ -47,4 +47,4 @@ CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
  /home/dev/rp2040/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
  /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
  /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
- /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
+ /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_rtt/include/pico/stdio_rtt.h

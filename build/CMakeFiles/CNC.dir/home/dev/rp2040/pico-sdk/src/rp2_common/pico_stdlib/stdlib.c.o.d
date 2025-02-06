@@ -55,7 +55,6 @@ CMakeFiles/CNC.dir/home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.
  /home/dev/rp2040/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/dev/rp2040/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
- /home/dev/rp2040/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /home/dev/rp2040/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
  /home/dev/rp2040/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
  /home/dev/rp2040/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
