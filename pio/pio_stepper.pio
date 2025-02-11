@@ -13,8 +13,6 @@ start:
     irq 2         ; Setze IRQ 1, um y zu triggern
     wait 1 irq 1  ; Warte auf IRQ 0 von y
     
-     
-
 loop:
     jmp !y start      ; Wenn y = 0, dann gehe zu start
     mov x, isr   

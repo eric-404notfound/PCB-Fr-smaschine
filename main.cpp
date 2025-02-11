@@ -31,7 +31,7 @@ int main() {
     testing_lcd();
 
     x_1++;
-    while (1){
+    while (c < 1000000){
         c++;
         sleep_ms(10);
     };

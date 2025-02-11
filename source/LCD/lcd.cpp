@@ -74,7 +74,7 @@ void lcd_init(uint8_t sda_pin, uint8_t scl_pin) {
 void testing_lcd(){
     lcd_init(PICO_DEFAULT_I2C_SDA_PIN, PICO_DEFAULT_I2C_SCL_PIN);
     lcd_set_cursor(0, 0);
-    lcd_string("Hello, World!");
+    lcd_string("Halöchen, Welt!");
     lcd_set_cursor(1, MAX_CHARS/2 - strlen("Mittig")/2 );
     lcd_string("Mittig");
 }
