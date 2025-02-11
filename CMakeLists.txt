@@ -16,8 +16,6 @@ pico_sdk_init()
 file(GLOB_RECURSE SOURCES "source/*.cpp")
 
 
-
-
 add_subdirectory(libs/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI)
 
 add_executable(CNC
