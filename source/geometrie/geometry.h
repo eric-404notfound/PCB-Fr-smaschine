@@ -4,6 +4,34 @@
 #include <iostream>
 #include <optional>
 
+// -------- 3D Vektor Klasse --------
+class Vec3 {
+public:
+    float x, y, z;
+
+    Vec3(float _x = 0, float _y = 0, float _z = 0);
+
+    Vec3 operator+(const Vec3& v) const;
+    Vec3 operator-(const Vec3& v) const;
+    Vec3 operator*(float s) const;
+    float length() const;
+    Vec3 normalized() const;
+    float dot(const Vec3& v) const;
+    Vec3 cross(const Vec3& v) const;
+};
+
+// -------- 3D Linie (zwischen zwei Punkten) --------
+class Line {
+public:
+    Vec3 start, end;
+
+    Line(const Vec3& s, const Vec3& e);
+    float length() const;
+    Vec3 pointAt(float t) const; // Berechnet Punkt auf der Linie (0 ≤ t ≤ 1)
+    std::optional<Vec3> intersect(const Line& other) const; // Berechnet Schnittpunkt (falls existierend)
+};
+
+
 // -------- 2D Vektor Klasse --------
 class Vec2 {
 public:
@@ -18,15 +46,17 @@ public:
 };
 
 // -------- Linie (zwischen zwei Punkten) --------
-class Line {
+class Line2D {
 public:
     Vec2 start, end;
 
-    Line(const Vec2& s, const Vec2& e);
+    Line2D(const Vec2& s, const Vec2& e);
     float length() const;
     Vec2 pointAt(float t) const; // Berechnet Punkt auf der Linie (0 ≤ t ≤ 1)
     std::optional<Vec2> intersect(const Line& other) const; // Berechnet Schnittpunkt
 };
+
+
 
 // -------- Kreis --------
 class Circle {
@@ -48,3 +78,12 @@ public:
     Velocity(const Vec2& dir, float spd);
     Vec2 apply(float deltaTime) const;
 };
+
+class Movement {
+    public:
+        Velocity velocity;
+        float distance;
+    
+        Movement(const Vec2& startPos, Vec2& endPos, float dist);
+        
+    };

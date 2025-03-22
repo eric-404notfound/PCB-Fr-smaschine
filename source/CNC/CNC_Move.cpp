@@ -131,6 +131,7 @@ void CNC_Controler::move_z(float mm, float mm_min){
 
 void CNC_Controler::run_programm(){
 
+    
     int j = 0;
     for (int i = 0; i < Program_gcode_len && !this->endstop_hit; i++)
         if (Program_gcode[i] != 0x0a)

@@ -1,10 +1,13 @@
 // Last update: 2021-09-29 20:00:00
+// Serial Host: indexnull.de Port: 3382
 #include <stdio.h>
 
 #include "pico/stdlib.h"
 #include "pico/time.h"
 
 #include "CNC_Controler.h"
+#include "Files.h"
+
 
 #include "lcd.h"
 
@@ -13,11 +16,19 @@ Axis y(290, 16, 17, 'y', 5, 5);
 Axis z(40, 18, 19, 'z', 6, 6);
 CNC_Controler cnc(x, y, z);
 
+
 int main() {
 
     stdio_init_all();
     sleep_ms(1000);
-    printf("Hallo welt");
+    for (int i = 0; i < 100; i++)
+    {
+        printf("\n");
+    }
+    
+    printf("Hallo welt\n");
+    
+    
 
     gpio_init(PICO_DEFAULT_LED_PIN);
     gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
@@ -26,32 +37,23 @@ int main() {
     int x_1 = 0;
     int y_1 = 0;
 
-    uint64_t volatile c = 0;
-    
-    testing_lcd();
+    testing_sd();
 
-    x_1++;
-    while (c < 1000000){
-        c++;
-        sleep_ms(10);
-    };
-    
-    
+
 
     return 0;
-    cnc.move_z(10,100); 
-    cnc.move_xy(-40,0,700); //750 max
-    cnc.reference();
+    while (1)    {
 
-    while (1)
-    {
-        printf("State: %s\n", gpio_get(2) ? "HIGH" : "LOW");   
+        cnc.move_xy(100,100,500);
+        cnc.move_xy(-100, -100, 500);
+
+        continue;
         printf("X: ");
         scanf("%d", &x_1);
+        printf("%d\n", x_1);
         printf("Y: ");
         scanf("%d", &y_1);
-
-        printf("X:%d Y:%d\n", x_1, y_1);
+        printf("%d\n", y_1);
         
         cnc.move_xy(x_1, y_1, 500);
        // cnc.move_z(10,100);
