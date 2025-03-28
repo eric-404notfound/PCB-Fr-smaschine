@@ -11,9 +11,9 @@
 
 #include "lcd.h"
 
-Axis x(190, 14, 15, 'x', 4, 4);
-Axis y(290, 16, 17, 'y', 5, 5);
-Axis z(40, 18, 19, 'z', 6, 6);
+Axis x(190, 14, 15, 'x', 6, 7);
+Axis y(290, 16, 17, 'y', 8, 9);
+Axis z(40, 18, 19, 'z', 10, 11);
 CNC_Controler cnc(x, y, z);
 
 
