@@ -17,7 +17,7 @@ GCODE CNC_Controler::parse_GCODE(std::string GCODE_str){
     // Setzen des Typs des Befehls (G, M oder T)
     Befehl.Type = GCODE_str[0];
 
-    // Extrahieren der Funktion des Befehls (die nächsten zwei Zeichen nach dem Typ)
+    // Extrahieren der Funktion des Befehls (die nächsten zwei Zeichen nach dem Typ) //Überprüfen was passiert wenn nicht M05 sondern M5
     Befehl.Funktion = std::stoi(std::string(&GCODE_str[1], 2));
 
     // TODO: Optimieren, damit nicht unnötig gesucht wird
