@@ -6,7 +6,7 @@
 GCODE CNC_Controler::parse_GCODE(std::string GCODE_str){
 
     // Initialisierung der GCODE_BEFEHL und GCODE_PARAMETER Strukturen
-    GCODE_BEFEHL Befehl{'F', 0};
+    GCODE_BEFEHL Befehl{'\0', 0};
     GCODE_PARAMETER Parameter = {std::nullopt, std::nullopt, std::nullopt, std::nullopt};
 
     // Überprüfen, ob der GCODE-String mit 'G', 'M' oder 'T' beginnt
