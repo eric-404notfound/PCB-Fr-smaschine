@@ -131,6 +131,46 @@ void CNC_Controler::move_z(float mm, float mm_min){
 
 void CNC_Controler::run_programm(){
 
+    FATFS fs;
+    FRESULT fr;
+    DIR dir;
+    FILINFO fno;
+    FIL file;
+    UINT br;
+    std::string filename;
+    
+        fr = f_opendir(&dir, "0:");
+        if (fr != FR_OK) {
+            printf("f_opendir error (%d)\n", fr);
+            return;
+        }
+    
+        while(true){
+            fr = f_readdir(&dir, &fno);
+    
+            if (fr != FR_OK){
+                printf("f_readdir error (%d)\n", fr);
+                return;
+            }
+            if(fno.fname[0] == 0){
+                break;
+            }
+    
+            if (fno.fattrib & AM_DIR){
+                printf("Directory: %s\n", fno.fname);
+            } 
+            else {
+                auto key = std::string(".gcode");
+                filename = std::string(fno.fname); //.gcode auslesen
+                std::size_t found = filename.rfind(key);
+                if (found!=std::string::npos)
+                    break;
+
+                printf("File:%s\n", fno.fname);
+            }
+        }
+        f_closedir(&dir);
+
     
     int j = 0;
     for (int i = 0; i < Program_gcode_len && !this->endstop_hit; i++)
@@ -245,6 +285,7 @@ void CNC_Controler::run_programm(){
 }
 
 void CNC_Controler::hard_stop(){
+    this->stop_time = time_us_64();
     this->x_axis.stop();
     this->y_axis.stop();
     this->z_axis.stop();

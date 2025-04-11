@@ -4,6 +4,9 @@
 #define DEBUG 3
 
 #include "Axis.h"
+#include "sd_card.h"
+#include "ff.h"
+
 
 #include "math.h"
 #include <string>

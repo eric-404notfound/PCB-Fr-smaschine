@@ -33,9 +33,12 @@ void CNC_Controler::reference(){
     while(this->stop_time > time_us_64())
         tight_loop_contents();
 
-    this->move_xy(200,0,500);
+    this->x_axis.stop();
+    this->y_axis.stop();
     
-    while(!this->x_axis.get_endstop_plus())
+    this->move_xy(300,0,500);
+    
+    while(this->x_axis.get_endstop_plus())
         tight_loop_contents();
     this->hard_stop();
 
@@ -43,7 +46,7 @@ void CNC_Controler::reference(){
     sleep_ms(500);
     this->move_xy(5,0,50);
 
-    while(!this->x_axis.get_endstop_plus())
+    while(this->x_axis.get_endstop_plus())
         tight_loop_contents();
 
     this->x_axis.stop();
@@ -55,7 +58,7 @@ void CNC_Controler::reference(){
 
     this->move_xy(0,300,500);
 
-    while(!this->y_axis.get_endstop_plus())
+    while(this->y_axis.get_endstop_plus())
         tight_loop_contents();
     this->hard_stop();
 
@@ -63,26 +66,26 @@ void CNC_Controler::reference(){
     sleep_ms(500);
     this->move_xy(0, 5,50);
 
-    while(!this->y_axis.get_endstop_plus())
+    while(this->y_axis.get_endstop_plus())
         tight_loop_contents();
 
     this->y_axis.stop();
     this->x_axis.stop();
 
     this->y_axis.reference(290); //wert muss noch angepasst werden
-    this->move_xy(-4, 0,500);
-
+    this->move_xy(0,-4,500);
 
     this->move_z(100, 500);
-    while(!this->z_axis.get_endstop_plus())
+    while(this->z_axis.get_endstop_plus())
         tight_loop_contents();
     this->hard_stop();
 
     this->move_z(-4, 500);
     this->move_z(5, 50);
-    while(!this->z_axis.get_endstop_plus())
+    while(this->z_axis.get_endstop_plus())
         tight_loop_contents();
     this->hard_stop();
+    this->move_z(-4, 500);
 
     this->z_axis.reference(40); //wert muss noch angepasst werden
 
