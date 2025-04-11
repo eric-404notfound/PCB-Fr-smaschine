@@ -14,7 +14,7 @@ void CNC_Controler::endstop_callback(uint gpio, uint32_t events){
 
 void CNC_Controler::endstop_check(bool on_off){
 
-    this->endstop_check_active = on_off; // Einschalten der Überwachung der Endschalter
+    this->endstop_check_active = on_off; // Speichern des Einschalten der Überwachung der Endschalter
 
     gpio_set_irq_enabled_with_callback(this->x_axis.get_endstop_pin_minus(), GPIO_IRQ_EDGE_FALL, on_off, &this->endstop_callback); // Interupts die dauerhaft die Endschalter Überprüfen
     gpio_set_irq_enabled_with_callback(this->x_axis.get_endstop_pin_plus(), GPIO_IRQ_EDGE_FALL, on_off, &this->endstop_callback); 
