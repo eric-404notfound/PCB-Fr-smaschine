@@ -1,4 +1,4 @@
-#include "CNC_Controler.h"
+#include "CNC_Controler.h" // Einbinden der Bibliothek
 
 extern CNC_Controler cnc;
 
