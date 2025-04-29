@@ -98,7 +98,8 @@ void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
 }
 
 void CNC_Controler::move_z(float mm, float mm_min){
-
+    // axe musste gedreht werden 
+    mm = -mm;
     if (this->abs_mode)
         mm -= this->z_axis.get_position();
     

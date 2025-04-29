@@ -13,7 +13,7 @@
 
 Axis x(190, 14, 15, 'x', 7, 6);
 Axis y(290, 16, 17, 'y', 9, 8);
-Axis z(40, 18, 19, 'z', 11, 10);
+Axis z(40, 18, 19, 'z', 10, 11);
 CNC_Controler cnc(x, y, z);
 
 
@@ -36,7 +36,11 @@ int main() {
 
     int x_1 = 0;
     int y_1 = 0;
-
+    while (z.get_endstop_minus())
+        tight_loop_contents();
+        
+    while (z.get_endstop_plus());
+        tight_loop_contents();
     //testing_sd();
     cnc.reference();
 
