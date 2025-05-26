@@ -4,6 +4,13 @@ extern CNC_Controler cnc;
 
 void CNC_Controler::endstop_callback(uint gpio, uint32_t events){
 
+    if (gpio==x_axis.get_endstop_pin_minus() || x_axis.get_endstop_pin_minus()) // Abfrage der Endschalter für die X Achse
+        this->x_axis.stop();                                                    // Wenn einer der Endschalter betätigt wurde Stoppt die X Achse
+    if (gpio==y_axis.get_endstop_pin_minus() || y_axis.get_endstop_pin_minus())
+        this->y_axis.stop();
+    if (gpio==z_axis.get_endstop_pin_minus() || z_axis.get_endstop_pin_minus())
+        this->z_axis.stop()
+
     cnc.hard_stop(); // CNC hält sofort alles an, auch die Spindel
     cnc.endstop_hit = true; // Alle Achsen verlieren Referenz und Stoppen
     cnc.x_axis.dereference(); // Löschen der Referenz der X-Achse
@@ -26,4 +33,5 @@ void CNC_Controler::endstop_check(bool on_off){
     this->endstop_hit = false; // Wenn kein Endschalter betätigt wird läuft das Programm normal weiter
 
 }
+
 
