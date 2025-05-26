@@ -140,47 +140,46 @@ void CNC_Controler::run_programm(){
     UINT br;
     std::string filename;
     
-        fr = f_opendir(&dir, "0:");
-        if (fr != FR_OK) {
-            printf("f_opendir error (%d)\n", fr);
+    fr = f_opendir(&dir, "0:");
+    if (fr != FR_OK) {
+        printf("f_opendir error (%d)\n", fr);
+        return;
+    }
+
+    while(true){
+        fr = f_readdir(&dir, &fno);
+
+        if (fr != FR_OK){
+            printf("f_readdir error (%d)\n", fr);
             return;
         }
-    
-        while(true){
-            fr = f_readdir(&dir, &fno);
-    
-            if (fr != FR_OK){
-                printf("f_readdir error (%d)\n", fr);
-                return;
-            }
-            if(fno.fname[0] == 0){
-                break;
-            }
-    
-            if (fno.fattrib & AM_DIR){
-                printf("Directory: %s\n", fno.fname);
-            } 
-            else {
-                auto key = std::string(".gcode");
-                filename = std::string(fno.fname); //.gcode auslesen
-                std::size_t found = filename.rfind(key);
-                if (found!=std::string::npos)
-                    break;
-
-                printf("File:%s\n", fno.fname);
-            }
+        if(fno.fname[0] == 0){
+            break;
         }
-        f_closedir(&dir);
 
-    
-    int j = 0;
-    for (int i = 0; i < Program_gcode_len && !this->endstop_hit; i++)
-        if (Program_gcode[i] != 0x0a)
-            continue;
-        else{
+        if (fno.fattrib & AM_DIR){
+            printf("Directory: %s\n", fno.fname);
+        } 
+        else {
+            auto key = std::string(".gcode");
+            filename = std::string(fno.fname); //.gcode auslesen
+            std::size_t found = filename.rfind(key);
+            if (found!=std::string::npos)
+                break;
 
-            std::string G_Funktion_str(Program_gcode[j], i - j);
-            j = i + 2;
+            printf("File:%s\n", fno.fname);
+        }
+    }
+    f_closedir(&dir);
+    f_open(&file, filename.c_str(),FA_READ);
+
+    char line[100]; 
+    gpio_put(PICO_DEFAULT_LED_PIN, 0);
+    while (f_gets(line, sizeof(line), &file)) {
+        printf(line);
+        
+
+            std::string G_Funktion_str(line);
 
             GCODE Befehl = this->parse_GCODE(G_Funktion_str);
 
@@ -292,4 +291,6 @@ void CNC_Controler::hard_stop(){
     this->z_axis.stop();
 
 }
-
+void CNC_Controler::activate_spindle(bool onoff){
+    printf("%d",onoff);
+};

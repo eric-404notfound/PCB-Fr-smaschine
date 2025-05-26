@@ -43,7 +43,7 @@ int main() {
         tight_loop_contents();
     //testing_sd();
     cnc.reference();
-
+    cnc.run_programm();
 
     return 0;
     while (1)    {
