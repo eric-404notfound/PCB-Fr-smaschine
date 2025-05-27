@@ -76,7 +76,7 @@ void CNC_Controler::reference(){
     this->move_z(-50, 200);
     while(this->z_axis.get_endstop_minus())
         tight_loop_contents();
-    this->z_axis.stop();
+    this->hard_stop();
 
     this->move_z(5, 300);
     sleep_ms(500);
