@@ -46,6 +46,9 @@ int main() {
 
     cnc.reference();
     cnc.endstop_check(true);
+    cnc.move_xy(0, 0,300);
+    cnc.move_xy(-1,-1,300);
+    cnc.move_xy(1,1,100);
     cnc.move_xy(-40,-40,300);
     cnc.set_abs_mode(true);
     cnc.move_xy(10,20,300);
@@ -58,7 +61,8 @@ int main() {
     cnc.move_xy(10,20,300);
     cnc.move_xy(100,200,300);
     
-
+    while(true)
+        sleep_ms(100);
     return 1;
     cnc.run_programm();
 

@@ -78,7 +78,8 @@ void CNC_Controler::raw_xy(float mm){
 }
 
 void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
-
+    if (this->endstop_hit)
+        return;
 
     // Wenn der absolute Modus aktiviert ist, subtrahiere die aktuelle Position
     if (this->abs_mode){
@@ -107,6 +108,9 @@ void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
 }
 
 void CNC_Controler::move_z(float mm, float mm_min){
+
+    if (this->endstop_hit)
+        return;
     // axe musste gedreht werden 
     mm = -mm;
     if (this->abs_mode)

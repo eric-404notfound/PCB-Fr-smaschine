@@ -23,6 +23,8 @@ private:
     static uint8_t used_axis;
     uint8_t axis;
 
+    int offset;
+
     #ifdef DMA_ENABLED
 
     int dma_chan;

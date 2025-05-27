@@ -123,6 +123,8 @@ void Stepper::stop(){
     pio_sm_restart(this->pio, this->sm);             // Reset inkl. Program Counter
     pio_sm_clear_fifos(this->pio, this->sm);         // FIFO leeren
     pio_sm_set_enabled(this->pio, this->sm, true);
+    pio_sm_exec(this->pio, this->sm, pio_encode_jmp(this->offset));
+
 
 }
 
@@ -131,7 +133,7 @@ Stepper::Stepper(uint8_t step_pin, uint8_t dir_pin, char axis){
     this->step_pin = step_pin;
     this->dir_pin = dir_pin;
 
-    int offset;
+    offset;
     switch (axis){
     case 'x':
 
