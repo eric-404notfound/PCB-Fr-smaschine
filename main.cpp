@@ -46,20 +46,8 @@ int main() {
 
     cnc.reference();
     cnc.endstop_check(true);
-    cnc.move_xy(0, 0,300);
-    cnc.move_xy(-1,-1,300);
-    cnc.move_xy(1,1,100);
-    cnc.move_xy(-40,-40,300);
-    cnc.set_abs_mode(true);
-    cnc.move_xy(10,20,300);
-    cnc.move_xy(100,200,300);
-    cnc.move_xy(10,20,300);
-    cnc.move_xy(100,200,300);
-    cnc.set_abs_mode(false);
-    cnc.move_xy(10,20,300);
-    cnc.move_xy(100,200,300);
-    cnc.move_xy(10,20,300);
-    cnc.move_xy(100,200,300);
+    init_sd();
+    cnc.run_programm();
     
     while(true)
         sleep_ms(100);

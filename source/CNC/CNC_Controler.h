@@ -18,7 +18,7 @@
 
 
 #define ACC_DCC_DISTANCE 1.0
-#define G00_MM_MIN 800.0
+#define G00_MM_MIN 500.0
 
 #define SPINDEL_ADJUSTABEL false
 

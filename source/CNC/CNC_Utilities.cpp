@@ -73,19 +73,19 @@ void CNC_Controler::reference(){
     this->y_axis.reference(215); //wert muss noch angepasst werden
     this->move_xy(0,-4,300);
 
-    this->move_z(-50, 200);
-    while(this->z_axis.get_endstop_minus())
+    this->move_z(40, 200);
+    while(this->z_axis.get_endstop_plus())
         tight_loop_contents();
     this->hard_stop();
 
-    this->move_z(5, 300);
+    this->move_z(-5, 300);
     sleep_ms(500);
-    this->move_z(-11, 50);
-    while(this->z_axis.get_endstop_minus())
+    this->move_z(11, 50);
+    while(this->z_axis.get_endstop_plus())
         tight_loop_contents();
     this->hard_stop();
-    this->z_axis.reference(35);
-    this->move_z(8, 300);
+    this->z_axis.reference(5);
+    this->move_z(-5, 300);
     
 
      //wert muss noch angepasst werden

@@ -5,15 +5,15 @@
 // Die Methode parse_GCODE nimmt einen GCODE-String als Eingabe und gibt eine GCODE-Struktur zurück.
 GCODE CNC_Controler::parse_GCODE(std::string GCODE_str){
 
+    if(GCODE_str.find("; Zurück")!= std::string::npos)
+        printf("123");
     // Initialisierung der GCODE_BEFEHL und GCODE_PARAMETER Strukturen
     GCODE_BEFEHL Befehl{'\0', 0};
     GCODE_PARAMETER Parameter = {std::nullopt, std::nullopt, std::nullopt, std::nullopt};
-
     // Überprüfen, ob der GCODE-String mit 'G', 'M' oder 'T' beginnt
-    if (GCODE_str[0] != 'G' || GCODE_str[0] != 'M' || GCODE_str[0] != 'T')
+    if (GCODE_str[0] != 'G' && GCODE_str[0] != 'M' && GCODE_str[0] != 'T')
         // Wenn nicht, wird ein Standard-GCODE zurückgegeben
         return {Befehl, Parameter};
-
     // Setzen des Typs des Befehls (G, M oder T)
     Befehl.Type = GCODE_str[0];
 
@@ -23,13 +23,13 @@ GCODE CNC_Controler::parse_GCODE(std::string GCODE_str){
     // TODO: Optimieren, damit nicht unnötig gesucht wird
 
     // Finden der Positionen der Parameter X, Y im GCODE-String
-    uint8_t x_pos = GCODE_str.find('X');
-    uint8_t y_pos = GCODE_str.find('Y');
+    size_t x_pos = GCODE_str.find('X',3);
+    size_t y_pos = GCODE_str.find('Y',3);
         
     // Extrahieren und Konvertieren des X-Parameters, falls vorhanden
     if (x_pos != std::string::npos){
-        uint8_t x_end = GCODE_str.find(' ', x_pos + 1);
-        uint8_t y_end = GCODE_str.find(' ', y_pos + 1);
+        size_t x_end = GCODE_str.find(' ', x_pos + 1);
+        size_t y_end = GCODE_str.find(' ', y_pos + 1);
 
         if (x_end == std::string::npos)
             x_end = GCODE_str.length();
@@ -42,36 +42,33 @@ GCODE CNC_Controler::parse_GCODE(std::string GCODE_str){
 
         Parameter.X = std::stof(x_str);
         Parameter.Y = std::stof(y_str);
-        return {Befehl, Parameter};
                 
     }
 
 
     // Extrahieren und Konvertieren des Z-Parameters, falls vorhanden
-    uint8_t z_pos = GCODE_str.find('Z');
+    size_t z_pos = GCODE_str.find('Z');
 
     if (z_pos != std::string::npos){
-        uint8_t z_end = GCODE_str.find(' ', z_pos + 1);
+        size_t z_end = GCODE_str.find(' ', z_pos + 1);
         if (z_end == std::string::npos)
             z_end = GCODE_str.length();
 
         std::string z_str = std::string(&GCODE_str[z_pos + 1], z_end);
         Parameter.Z = std::stof(z_str);
 
-        return {Befehl, Parameter};
     }
 
-    uint8_t f_pos = GCODE_str.find('F');
+    size_t f_pos = GCODE_str.find('F');
 
     // Extrahieren und Konvertieren des F-Parameters, falls vorhanden
     if (f_pos != std::string::npos){
-        uint8_t f_end = GCODE_str.find(' ', f_pos + 1);
+        size_t f_end = GCODE_str.find(' ', f_pos + 1);
         if (f_end == std::string::npos)
             f_end = GCODE_str.length();
 
         std::string f_str = std::string(&GCODE_str[f_pos + 1], f_end);
         Parameter.F = std::stof(f_str);
-        return {Befehl, Parameter};
     }
 
 

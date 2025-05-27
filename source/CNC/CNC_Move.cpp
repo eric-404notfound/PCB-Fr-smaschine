@@ -83,7 +83,6 @@ void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
 
     // Wenn der absolute Modus aktiviert ist, subtrahiere die aktuelle Position
     if (this->abs_mode){
-        printf("Absolut behindert");
         x_mm -= this->x_axis.get_position();
         y_mm -= this->y_axis.get_position();
     }
@@ -113,8 +112,13 @@ void CNC_Controler::move_z(float mm, float mm_min){
         return;
     // axe musste gedreht werden 
     mm = -mm;
-    if (this->abs_mode)
+    
+    if (this->abs_mode){
+        printf("%fmm abs", -mm);
+        printf("Current pos z:%f", this->z_axis.get_position());
         mm -= this->z_axis.get_position();
+        printf("%fmm inc to go", -mm);
+    }
     
     // Wenn sich x oder y bewegen, warte bis sie fertig sind
     while(this->x_axis.is_moving() || this->y_axis.is_moving())
@@ -194,113 +198,123 @@ void CNC_Controler::run_programm(){
 
     char line[100]; 
     gpio_put(PICO_DEFAULT_LED_PIN, 0);
+    float speed = 0;
     while (f_gets(line, sizeof(line), &file)) {
-        printf(line);
+
+        std::string G_Funktion_str(line);
+        printf(G_Funktion_str.c_str());
+        
+        GCODE Befehl = this->parse_GCODE(G_Funktion_str);
+        printf("Daraus folgt %c %d " ,Befehl.Befehl.Type, Befehl.Befehl.Funktion);
+        if(Befehl.Parameter.X.has_value())
+            printf("X%f ",Befehl.Parameter.X.value());
+        if(Befehl.Parameter.Y.has_value())
+            printf("Y%f ",Befehl.Parameter.Y.value());
+        if(Befehl.Parameter.Z.has_value())
+            printf("Z%f ",Befehl.Parameter.Z.value());
+        if (Befehl.Parameter.F.has_value())
+            printf("F%f ", Befehl.Parameter.F.value());
+        printf("\n");
         
 
-            std::string G_Funktion_str(line);
 
-            GCODE Befehl = this->parse_GCODE(G_Funktion_str);
-
-            float speed = 0;
-
-            switch (Befehl.Befehl.Type)
-            {
-            case 'G':
-                switch (Befehl.Befehl.Funktion){
-                
-                case 0:
-                    // G00: Schnellbewegung
-                    if (Befehl.Parameter.X.has_value() && Befehl.Parameter.Y.has_value()){
-                        this->move_xy(Befehl.Parameter.X.value(), Befehl.Parameter.Y.value(), G00_MM_MIN);
-                    }
-                    else if (Befehl.Parameter.Z.has_value()){
-                        this->move_z(Befehl.Parameter.Z.value(), G00_MM_MIN);
-                    }
-
-                    break;
-                
-                case 1:
-
-                    if (Befehl.Parameter.F.has_value())
-                        speed = Befehl.Parameter.F.value();
-                    // G01: Lineare Interpolation
-                    if (Befehl.Parameter.X.has_value() && Befehl.Parameter.Y.has_value()){
-                        this->move_xy(Befehl.Parameter.X.value(), Befehl.Parameter.Y.value(),speed);
-                    }
-                    else if (Befehl.Parameter.Z.has_value()){
-                        this->move_z(Befehl.Parameter.Z.value(), speed);
-                    }
-                    break;
-                
-                case 30:
-                    // G30: Programmende
-                    //Referenzfahrt
-                    break;
-                
-                case 90:
-                    // G90: Absolute Positionierung
-                    this->abs_mode = true;
-                    break;
-                
-                case 91:
-                    // G91: Relative Positionierung
-                    this->abs_mode = false;
-                    break;
-                
-                default:
-                    break;
+        switch (Befehl.Befehl.Type)
+        {
+        case 'G':
+            switch (Befehl.Befehl.Funktion){
+            
+            case 0:
+                // G00: Schnellbewegung
+                if (Befehl.Parameter.X.has_value() && Befehl.Parameter.Y.has_value()){
+                    this->move_xy(Befehl.Parameter.X.value(), Befehl.Parameter.Y.value(), G00_MM_MIN);
+                }
+                else if (Befehl.Parameter.Z.has_value()){
+                    this->move_z(Befehl.Parameter.Z.value(), G00_MM_MIN);
                 }
 
                 break;
             
-            case 'M':
-                /* code */
-                switch (Befehl.Befehl.Funktion)
-                {
-                case 3:
-                    #if SPINDEL_ADJUSTABEL
-                    if (Befehl.Parameter.S.has_value())
-                        this->activate_spindle(Befehl.Parameter.S.value());
-                    else
-                        this->activate_spindle(0);
-                    #else
-                        this->activate_spindle(true);
-                    #endif
+            case 1:
 
-                    break;
-
-                
-                case 4:
-                    #if SPINDEL_ADJUSTABEL
-                    if (Befehl.Parameter.S.has_value())
-                        this->activate_spindle(-Befehl.Parameter.S.value());
-                    else
-                        this->activate_spindle(0);
-                    
-                    #else
-                        this->activate_spindle(true);
-                    #endif
-
-                    break;
-
-                case 5:
-                    #if SPINDEL_ADJUSTABEL
-                        this->activate_spindle(0);
-                    #else
-                        this->activate_spindle(false);
-                    #endif
-
-                    break;
-                
-                default:
-                    break;
+                if (Befehl.Parameter.F.has_value())
+                    speed = Befehl.Parameter.F.value();
+                // G01: Lineare Interpolation
+                if (Befehl.Parameter.X.has_value() && Befehl.Parameter.Y.has_value()){
+                    this->move_xy(Befehl.Parameter.X.value(), Befehl.Parameter.Y.value(),speed);
+                }
+                else if (Befehl.Parameter.Z.has_value()){
+                    this->move_z(Befehl.Parameter.Z.value(), speed);
                 }
                 break;
+            
+            case 30:
+                // G30: Programmende
+                //Referenzfahrt
+                break;
+            
+            case 90:
+                // G90: Absolute Positionierung
+                this->abs_mode = true;
+                break;
+            
+            case 91:
+                // G91: Relative Positionierung
+                this->abs_mode = false;
+                break;
+            
             default:
                 break;
             }
+
+            break;
+        
+        case 'M':
+            /* code */
+            switch (Befehl.Befehl.Funktion)
+            {
+            case 3:
+                #if SPINDEL_ADJUSTABEL
+                if (Befehl.Parameter.S.has_value())
+                    this->activate_spindle(Befehl.Parameter.S.value());
+                else
+                    this->activate_spindle(0);
+                #else
+                    this->activate_spindle(true);
+                #endif
+
+                break;
+
+            
+            case 4:
+                #if SPINDEL_ADJUSTABEL
+                if (Befehl.Parameter.S.has_value())
+                    this->activate_spindle(-Befehl.Parameter.S.value());
+                else
+                    this->activate_spindle(0);
+                
+                #else
+                    this->activate_spindle(true);
+                #endif
+
+                break;
+
+            case 5:
+                #if SPINDEL_ADJUSTABEL
+                    this->activate_spindle(0);
+                #else
+                    this->activate_spindle(false);
+                #endif
+
+                break;
+            
+            default:
+                break;
+            }
+            break;
+        default:
+            break;
         }
+    }
 }
 
 void CNC_Controler::hard_stop(){

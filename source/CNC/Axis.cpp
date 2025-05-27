@@ -21,7 +21,7 @@ bool Axis::move(float mm, float mm_min){
 
     //temporary 40.96 bei 8 microsteps -> 81.92 bei 4 microsteps -> 163.84 bei 2 microsteps -> 327.68 bei 1 microstep
     if (mm < -MAX_DISTANCE || mm > MAX_DISTANCE){
-        printf("Error: Axis:%c, mm:%f <-> %f max\n", this->axis_name, mm, MAX_DISTANCE);
+        printf("Error MaxD: Axis:%c, mm:%f <-> %f max\n", this->axis_name, mm, MAX_DISTANCE);
         return false;
 
     }

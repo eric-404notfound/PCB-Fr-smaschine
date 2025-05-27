@@ -8,6 +8,6 @@
 #include "sd_card.h"
 #include "ff.h"
 
-
+void init_sd();
 void testing_sd();
 void read_line(const char *path, char *buffer, size_t buffsize);
