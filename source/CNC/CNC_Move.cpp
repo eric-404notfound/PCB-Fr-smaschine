@@ -128,8 +128,6 @@ void CNC_Controler::move_z(float mm, float mm_min){
         this->stop_time_z = time_us_32();
 
     this->stop_time_z += static_cast<uint32_t>((abs(mm) * 1) *60*1000*1000 / mm_min);
-
-    printf("t:%d, tz:%d z:%d \n",time_us_32(), this->stop_time_z, static_cast<uint32_t>((abs(mm) * 1) *60*1000*1000 / mm_min));
     float steps = mm / static_cast<float>(MAX_DISTANCE);
 
     printf("Z Achse fährt %fmm mit %fmm/min\n",mm,mm_min );

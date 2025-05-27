@@ -36,8 +36,6 @@ void CNC_Controler::reference(){
 
     while(this->stop_time_z > time_us_32())
         tight_loop_contents();
-
-    this->hard_stop();
     
     this->move_xy(300,0,300);
     
