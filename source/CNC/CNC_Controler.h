@@ -11,6 +11,7 @@
 #include "math.h"
 #include <string>
 #include <optional>
+#include <inttypes.h>
 #include "hardware/gpio.h"
 
 #include "Program.h"
@@ -60,7 +61,8 @@ private:
     float is_mm_min = 0;
     float dcc_distance = 0;
 
-    uint64_t stop_time = 0;
+    uint32_t stop_time_xy = 0;
+    uint32_t stop_time_z = 0;
 
     char GCODE_BUFFER[64];
 
@@ -93,6 +95,7 @@ public:
     void hard_stop();
 
     void reference();
+    void set_abs_mode(bool abs);
     
     void run_programm();
     GCODE parse_GCODE(std::string GCODE_str);

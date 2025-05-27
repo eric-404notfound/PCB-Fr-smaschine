@@ -33,18 +33,19 @@ bool Axis::move(float mm, float mm_min){
         return false;
     }
         
+    //printf("Axe:%c, start:%f <-> %f:end \n", this->axis_name, this->position, this->position += mm);
 
-    if(this->referenced)
-        this->position += mm;
 
     bool direction = mm < 0 ? 1 : 0;
+    if(this->referenced){
+        this->position += mm;
+        if(this->position > this->axisLength || this->position < 0){
 
-    if(this->position > this->axisLength || this->position < 0){
+            printf("Error: Axis:%c, position:%f <-> %f max\n", this->axis_name, this->position, this->axisLength);
+            this->position -= mm;
 
-        printf("Error: Axis:%c, position:%f <-> %f max\n", this->axis_name, this->position, this->axisLength);
-        this->position -= mm;
-
-        return false;
+            return false;
+        }
     }
     
     if(direction)
@@ -71,7 +72,7 @@ bool Axis::move(float mm, float mm_min){
         return false;
     }
 
-    printf("Axis:%c, mm: %f, mm_min: %f direction:%d \n", this->axis_name,  mm, mm_min, direction);
+    //printf("Axis:%c, mm: %f, mm_min: %f direction:%d \n", this->axis_name,  mm, mm_min, direction);
     this->stepper.move(((direction & 0x1) << 31) | ((steps & 0x7FFF) << 16) | (delay & 0xFFFF));
     this->total_moved += mm;
 
@@ -80,8 +81,8 @@ bool Axis::move(float mm, float mm_min){
 
 void Axis::reference(float position){
 
-    this->referenced=true;
-    this->position=position;
+    this->referenced = true;
+    this->position = position;
 
 }
 

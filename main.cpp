@@ -32,17 +32,34 @@ int main() {
 
     gpio_init(PICO_DEFAULT_LED_PIN);
     gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
-    gpio_put(PICO_DEFAULT_LED_PIN, 1);
+    
 
     int x_1 = 0;
     int y_1 = 0;
     while (z.get_endstop_minus())
         tight_loop_contents();
-        
-    while (z.get_endstop_plus());
+
+    gpio_put(PICO_DEFAULT_LED_PIN, 1);  
+    while (z.get_endstop_plus())
         tight_loop_contents();
     //testing_sd();
+
     cnc.reference();
+    cnc.endstop_check(true);
+    cnc.move_xy(-40,-40,300);
+    cnc.set_abs_mode(true);
+    cnc.move_xy(10,20,300);
+    cnc.move_xy(100,200,300);
+    cnc.move_xy(10,20,300);
+    cnc.move_xy(100,200,300);
+    cnc.set_abs_mode(false);
+    cnc.move_xy(10,20,300);
+    cnc.move_xy(100,200,300);
+    cnc.move_xy(10,20,300);
+    cnc.move_xy(100,200,300);
+    
+
+    return 1;
     cnc.run_programm();
 
     return 0;

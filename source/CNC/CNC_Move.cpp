@@ -2,14 +2,14 @@
 
 
 
-CNC_Controler::CNC_Controler(Axis &x, Axis &y, Axis &z): x_axis(x), y_axis(y), z_axis(z), stop_time(time_us_64()) {
+CNC_Controler::CNC_Controler(Axis &x, Axis &y, Axis &z): x_axis(x), y_axis(y), z_axis(z), stop_time_xy(time_us_64()) {
     // Konstruktor
 };
 
 CNC_Controler::~CNC_Controler() {
     // Destruktor
     printf("CNC_Controler destructor\n");
-    while(this->stop_time > time_us_64())
+    while(this->stop_time_xy > time_us_32())
         tight_loop_contents();
 
     while(this->x_axis.is_moving() || this->y_axis.is_moving())
@@ -32,9 +32,9 @@ void CNC_Controler::set_xy_direction(float x_mm, float y_mm){
     this->x_pitch = x_mm / dist;
     this->y_pitch = y_mm / dist;
 
-    #if DEBUG > 2
-        printf("x_pitch: %f y_pitch: %f\n", this->x_pitch, this->y_pitch);
-    #endif
+    
+    //printf("x_pitch: %f y_pitch: %f\n", this->x_pitch, this->y_pitch);
+    
  
 }
 
@@ -50,14 +50,16 @@ void CNC_Controler::raw_xy(float mm){
 
     float calls = mm / static_cast<float>(MAX_DISTANCE);
 
-    if (this->stop_time < time_us_64())
-        this->stop_time = time_us_64(); //+ 500000;
+    if (this->stop_time_xy < time_us_32())
+        this->stop_time_xy = time_us_32(); //+ 500000;
     
     if(x_pitch != 0)
-        this->stop_time += static_cast<uint64_t>((mm * abs(this->x_pitch)) *60*1000*1000 / this->x_mm_min);
+        this->stop_time_xy += static_cast<uint32_t>((abs(mm) * abs(this->x_pitch)) *60*1000*1000 / this->x_mm_min);
     else
-        this->stop_time += static_cast<uint64_t>((mm * abs(this->y_pitch)) *60*1000*1000 / this->y_mm_min); 
+        this->stop_time_xy += static_cast<uint32_t>((abs(mm) * abs(this->y_pitch)) *60*1000*1000 / this->y_mm_min); 
 
+    printf("X Achse fährt %fmm mit %fmm/min\n",mm * abs(this->x_pitch), this->x_mm_min);
+    printf("Y Achse fährt %fmm mit %fmm/min\n",mm * abs(this->y_pitch), this->y_mm_min);
     // Bewege die Achsen in Schritten von MAX_DISTANCE
     for(;calls > 1; calls--){
         if(!this->x_axis.move(MAX_DISTANCE * x_pitch, this->x_mm_min))
@@ -80,6 +82,7 @@ void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
 
     // Wenn der absolute Modus aktiviert ist, subtrahiere die aktuelle Position
     if (this->abs_mode){
+        printf("Absolut behindert");
         x_mm -= this->x_axis.get_position();
         y_mm -= this->y_axis.get_position();
     }
@@ -93,6 +96,12 @@ void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
     if(distance == 0)
         return;
 
+    while (this->z_axis.is_moving())
+        tight_loop_contents();
+    
+
+    while(this->stop_time_z > time_us_32())
+        tight_loop_contents();
     // Bewege die Achsen um die verbleibende Strecke
     this->raw_xy(distance);
 }
@@ -109,13 +118,21 @@ void CNC_Controler::move_z(float mm, float mm_min){
     
     // Wenn Theoretisch keine Bewegung stattfindet mach weiter
     #if DEBUG >2
-        printf("Waiting %dms" , stop_time - time_us_64());
+        printf("Waiting %dms" , stop_time_xy - time_us_32());
     #endif
 
-    while(this->stop_time > time_us_64())
+    while(this->stop_time_xy > time_us_32())
         tight_loop_contents();
 
+    if(this->stop_time_z <  time_us_32())
+        this->stop_time_z = time_us_32();
+
+    this->stop_time_z += static_cast<uint32_t>((abs(mm) * 1) *60*1000*1000 / mm_min);
+
+    printf("t:%d, tz:%d z:%d \n",time_us_32(), this->stop_time_z, static_cast<uint32_t>((abs(mm) * 1) *60*1000*1000 / mm_min));
     float steps = mm / static_cast<float>(MAX_DISTANCE);
+
+    printf("Z Achse fährt %fmm mit %fmm/min\n",mm,mm_min );
 
     // Bewege die Achsen in Schritten von MAX_DISTANCE
     for(;steps > 1; steps--){
@@ -285,7 +302,8 @@ void CNC_Controler::run_programm(){
 }
 
 void CNC_Controler::hard_stop(){
-    this->stop_time = time_us_64();
+    this->stop_time_xy = time_us_32();
+    this->stop_time_z = time_us_32();
     this->x_axis.stop();
     this->y_axis.stop();
     this->z_axis.stop();

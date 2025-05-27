@@ -109,8 +109,7 @@ bool Stepper::processing(){
     #ifdef DMA_ENABLED
     return dma_finish();
     #endif
-
-    return pio_sm_get_tx_fifo_level(this->pio, this->sm) > 0;
+    return !pio_sm_is_tx_fifo_empty(this->pio, this->sm);
     
 }
 
@@ -120,8 +119,10 @@ void Stepper::stop(){
         #warning "DMA nicht überdacht"
     #endif
 
-    pio_sm_clear_fifos(this->pio, this->sm);
-    pio_sm_restart(this->pio, this->sm);
+    pio_sm_set_enabled(this->pio, this->sm, false);  // SM anhalten
+    pio_sm_restart(this->pio, this->sm);             // Reset inkl. Program Counter
+    pio_sm_clear_fifos(this->pio, this->sm);         // FIFO leeren
+    pio_sm_set_enabled(this->pio, this->sm, true);
 
 }
 
