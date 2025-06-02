@@ -46,21 +46,12 @@ int main() {
 
     cnc.reference();
     cnc.endstop_check(true);
-    init_sd();
-    cnc.run_programm();
-    
-    while(true)
-        sleep_ms(100);
-    return 1;
-    cnc.run_programm();
 
-    return 0;
     while (1)    {
 
-        cnc.move_xy(100,100,500);
-        cnc.move_xy(-100, -100, 500);
 
-        continue;
+        
+
         printf("X: ");
         scanf("%d", &x_1);
         printf("%d\n", x_1);

@@ -52,14 +52,17 @@ private:
     Axis &x_axis;
     float x_mm_min = 0;
     float x_pitch = 0;
+    float x_pos = 0;
 
     Axis &y_axis;
     float y_mm_min = 0;
     float y_pitch = 0;
+    float y_pos = 0;
 
     Axis &z_axis;
     float is_mm_min = 0;
     float dcc_distance = 0;
+    float z_pos = 0;
 
     uint32_t stop_time_xy = 0;
     uint32_t stop_time_z = 0;
@@ -95,13 +98,12 @@ public:
     void hard_stop();
 
     void reference();
+    void set_pos(float x, float y, float z);
+
     void set_abs_mode(bool abs);
     
     void run_programm();
     GCODE parse_GCODE(std::string GCODE_str);
-
-    void Notfall_stop();
-    void safety_stop();
 
 public:
 

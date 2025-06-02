@@ -93,6 +93,7 @@ void CNC_Controler::reference(){
     this->abs_mode = temp;
     this->endstop_check(temp2);
     this->hard_stop();
+    this->set_pos(181,211,10);
 }
 
 void CNC_Controler::set_abs_mode(bool abs){

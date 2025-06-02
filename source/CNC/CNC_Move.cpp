@@ -58,6 +58,8 @@ void CNC_Controler::raw_xy(float mm){
     else
         this->stop_time_xy += static_cast<uint32_t>((abs(mm) * abs(this->y_pitch)) *60*1000*1000 / this->y_mm_min); 
 
+    x_pos += mm * x_pitch;
+    y_pos += mm * y_pitch;
     printf("X Achse fährt %fmm mit %fmm/min\n",mm * abs(this->x_pitch), this->x_mm_min);
     printf("Y Achse fährt %fmm mit %fmm/min\n",mm * abs(this->y_pitch), this->y_mm_min);
     // Bewege die Achsen in Schritten von MAX_DISTANCE
@@ -83,8 +85,8 @@ void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
 
     // Wenn der absolute Modus aktiviert ist, subtrahiere die aktuelle Position
     if (this->abs_mode){
-        x_mm -= this->x_axis.get_position();
-        y_mm -= this->y_axis.get_position();
+        x_mm -= this->x_pos;
+        y_mm -= this->y_pos;
     }
 
     // Setze die Richtung der Bewegung
@@ -114,10 +116,7 @@ void CNC_Controler::move_z(float mm, float mm_min){
     mm = -mm;
     
     if (this->abs_mode){
-        printf("%fmm abs", -mm);
-        printf("Current pos z:%f", this->z_axis.get_position());
-        mm -= this->z_axis.get_position();
-        printf("%fmm inc to go", -mm);
+        mm -= this->z_pos;
     }
     
     // Wenn sich x oder y bewegen, warte bis sie fertig sind
@@ -152,6 +151,13 @@ void CNC_Controler::move_z(float mm, float mm_min){
         printf("Error: z\n");
 
 } 
+
+void CNC_Controler::set_pos(float x, float y, float z){
+    
+    x_pos = x;
+    y_pos = y;
+    z_pos = z;
+}
 
 void CNC_Controler::run_programm(){
 
