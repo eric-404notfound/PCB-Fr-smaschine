@@ -26,6 +26,9 @@ socket, which SPI it is driven by, and how it is wired.
 
 */
 
+
+// Wurde für unsere bedürfnisse angepasst siehe https://elm-chan.org/fsw/ff/
+
 #include <assert.h>
 #include <string.h>
 //

@@ -3,7 +3,7 @@
 
 uint8_t Stepper::used_axis = 0;
 
-
+// Bewegung direkt ausführen (ohne DMA)
 void Stepper::raw_move(uint32_t value){
 
     #if DEBUG > 2
@@ -12,7 +12,7 @@ void Stepper::raw_move(uint32_t value){
     #endif
         
     while (pio_sm_is_tx_fifo_full(this->pio, this->sm))
-        tight_loop_contents();
+        sleep_ms(500);
     
 
     #if DEBUG > 2
@@ -23,6 +23,7 @@ void Stepper::raw_move(uint32_t value){
 
 };
 
+// Bewegung über DMA oder direkt je nach Konfiguration
 void Stepper::move(uint32_t value){
 
     #ifdef DMA_ENABLED
@@ -65,6 +66,7 @@ void Stepper::move(uint32_t value){
 
 
 #ifdef DMA_ENABLED
+// Einrichtung des DMA-Kanals für den Stepper
 void Stepper::setup_dma(){
 
     this->dma_chan = dma_claim_unused_channel(true); // Claim a DMA channel
@@ -77,12 +79,14 @@ void Stepper::setup_dma(){
     dma_channel_configure(
         dma_chan,
         &this->dma_config,
-        &this->pio->txf[this->sm],    // Write address (only need to set this once)
+        &this->pio->txf[this->sm],    // Write address
         nullptr,                      // Read address
         DMA_BUFFER_SIZE,              // Number of transfers (0 = unlimited) 
-        false                         // Don't start yet
+        false                         // Don't start
     );
 };
+
+// Prüfen, ob DMA abgeschlossen ist
 bool Stepper::dma_finish(){
 
     if(!dma_channel_is_busy(this->dma_chan))
@@ -103,7 +107,7 @@ bool Stepper::dma_finish(){
 }
 #endif
 
-
+// Prüfen ob gerade Schritte ausgeführt werden
 bool Stepper::processing(){
 
     #ifdef DMA_ENABLED
@@ -112,7 +116,7 @@ bool Stepper::processing(){
     return !pio_sm_is_tx_fifo_empty(this->pio, this->sm);
     
 }
-
+// Sofortiger Stopp der Bewegung (auch PIO-Reset)
 void Stepper::stop(){
     #ifdef DMA_ENABLED
         dma_channel_abort(this->dma_chan);
@@ -128,6 +132,7 @@ void Stepper::stop(){
 
 }
 
+// Konstruktor für Stepper mit initialer PIO- und SM-Zuweisung je nach Achse
 Stepper::Stepper(uint8_t step_pin, uint8_t dir_pin, char axis){
 
     this->step_pin = step_pin;
@@ -194,6 +199,7 @@ Stepper::Stepper(uint8_t step_pin, uint8_t dir_pin, char axis){
     #endif
 }
 
+// Destruktor: Freigabe der genutzten Ressourcen
 Stepper::~Stepper(){
 
     pio_sm_unclaim(this->pio, this->sm);

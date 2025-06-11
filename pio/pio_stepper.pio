@@ -90,27 +90,27 @@ low_delay:
 
 
 % c-sdk {
+// Initialisiert die Stepper-Steuerung für die X-Achse mit PIO und State Machine
 static inline void stepper_x_program_init(PIO pio, uint sm, uint offset, uint step_pin, uint dir_pin, uint MICROSTEPS) {
 
     pio_sm_config c = stepper_x_program_get_default_config(offset);
 
-    // Konfiguriere die Direction-Pins
+    // Richtungs-Pin konfigurieren
     pio_gpio_init(pio, dir_pin);
     pio_sm_set_consecutive_pindirs(pio, sm, dir_pin, 1, true);
     pio_sm_set_out_pins(pio, sm, dir_pin, 1);
     sm_config_set_out_pins(&c, dir_pin, 1);
 
 
-    // Konfiguriere die Side-Set-Pins (für step)
+    // Step-Pin als Sideset konfigurieren
     pio_gpio_init(pio, step_pin);
     pio_sm_set_consecutive_pindirs(pio, sm, step_pin, 1, true);
-
     pio_sm_set_sideset_pins(pio, sm, step_pin);
     sm_config_set_sideset_pins(&c, step_pin);
 
 
 
-    // Konfiguriere die FIFO
+    // FIFO-Konfiguration: 32 Bit, nur TX-FIFO verwenden
     sm_config_set_out_shift(&c, false, true, 32);
     sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_TX);
 
@@ -124,6 +124,7 @@ static inline void stepper_x_program_init(PIO pio, uint sm, uint offset, uint st
     pio_sm_set_enabled(pio, sm, true);
 }
 
+// Identisch zur X-Achse, aber für Y-Achse
 static inline void stepper_y_program_init(PIO pio, uint sm, uint offset, uint step_pin, uint dir_pin, uint MICROSTEPS) {
 
     pio_sm_config c = stepper_y_program_get_default_config(offset);
@@ -158,6 +159,7 @@ static inline void stepper_y_program_init(PIO pio, uint sm, uint offset, uint st
     pio_sm_set_enabled(pio, sm, true);
 }
 
+// Identisch zur X-/Y-Achse, aber für Z-Achse (PIO1)
 static inline void stepper_z_program_init(PIO pio, uint sm, uint offset, uint step_pin, uint dir_pin, uint MICROSTEPS) {
 
     pio_sm_config c = stepper_z_program_get_default_config(offset);

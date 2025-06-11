@@ -1,5 +1,9 @@
 #include "geometry.h"
 
+
+// Geometrie-Bibliothek für 2D- und 3D-Koordinaten, Linien, Kreise und Vektoren
+// wurde nicht verwende
+
 // -------- Vec2 Implementierung --------
 Vec2::Vec2(float _x, float _y) : x(_x), y(_y) {}
 

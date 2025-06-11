@@ -11,12 +11,13 @@
 
 #include "lcd.h"
 
-Axis x(190, 14, 15, 'x', 7, 6);
-Axis y(290, 16, 17, 'y', 9, 8);
-Axis z(40, 18, 19, 'z', 11, 10);
-CNC_Controler cnc(x, y, z);
+Axis x(190, 14, 15, 'x', 7, 6); // X-Achse: Länge 190mm, Step-Pin 14, Dir-Pin 15, Achsenname 'x', Endstop-Pin Plus 7, Minus 6
+Axis y(290, 16, 17, 'y', 9, 8); // Y-Achse: Länge 290mm, Step-Pin 16, Dir-Pin 17, Achsenname 'y', Endstop-Pin Plus 9, Minus 8
+Axis z(40, 18, 19, 'z', 11, 10); // Z-Achse: Länge 40mm, Step-Pin 18, Dir-Pin 19, Achsenname 'z', Endstop-Pin Plus 11, Minus 10
+CNC_Controler cnc(x, y, z); // CNC-Controller-Instanz mit den Achsen X, Y und Z
 
 
+// Noch nicht perfektioniert aber die Grundfunktionen sind da (zurzeit noch ohne Spindelsteuerung)
 int main() {
 
     stdio_init_all();
@@ -28,40 +29,18 @@ int main() {
     
     printf("Hallo welt\n");
     
-    
 
     gpio_init(PICO_DEFAULT_LED_PIN);
     gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
-    
-
-    int x_1 = 0;
-    int y_1 = 0;
-    while (z.get_endstop_minus())
-        tight_loop_contents();
-
-    gpio_put(PICO_DEFAULT_LED_PIN, 1);  
-    while (z.get_endstop_plus())
-        tight_loop_contents();
-    //testing_sd();
 
     cnc.reference();
-    cnc.endstop_check(true);
 
-    while (1)    {
-
-
-        
-
-        printf("X: ");
-        scanf("%d", &x_1);
-        printf("%d\n", x_1);
-        printf("Y: ");
-        scanf("%d", &y_1);
-        printf("%d\n", y_1);
-        
-        cnc.move_xy(x_1, y_1, 500);
-       // cnc.move_z(10,100);
-
-    }
+    cnc.set_abs_mode(false);
+    cnc.move_xy(-160, -75, 700);
+    cnc.move_z(0,300);
+    cnc.set_pos(20,100,-20);
+    cnc.set_abs_mode(true);
+    init_sd();
+    cnc.run_programm();
 
 }

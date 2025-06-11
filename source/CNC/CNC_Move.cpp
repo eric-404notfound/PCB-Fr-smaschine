@@ -6,17 +6,20 @@ CNC_Controler::CNC_Controler(Axis &x, Axis &y, Axis &z): x_axis(x), y_axis(y), z
     // Konstruktor
 };
 
+// Destruktor: Warten bis alle Bewegungen abgeschlossen sind, dann Endstop-Zustand prüfen
 CNC_Controler::~CNC_Controler() {
-    // Destruktor
     printf("CNC_Controler destructor\n");
     while(this->stop_time_xy > time_us_32())
         tight_loop_contents();
 
     while(this->x_axis.is_moving() || this->y_axis.is_moving())
         tight_loop_contents();
+    
+    endstop_check(true);
 
 }
 
+// Richtung der XY-Bewegung als normierte Vektoren berechnen
 void CNC_Controler::set_xy_direction(float x_mm, float y_mm){
 
     float dist = sqrt(x_mm * x_mm + y_mm * y_mm);
@@ -31,13 +34,11 @@ void CNC_Controler::set_xy_direction(float x_mm, float y_mm){
     // Berechne die Anteile der Bewegung in x- und y-Richtung
     this->x_pitch = x_mm / dist;
     this->y_pitch = y_mm / dist;
-
-    
-    //printf("x_pitch: %f y_pitch: %f\n", this->x_pitch, this->y_pitch);
     
  
 }
 
+// Geschwindigkeit auf x- und y-Komponente verteilen
 void CNC_Controler::set_xy_speed(float mm_min){
 
     // Skaliere die Geschwindigkeit entsprechend der Bewegung
@@ -46,6 +47,8 @@ void CNC_Controler::set_xy_speed(float mm_min){
     this->is_mm_min = mm_min;
 }
 
+
+// Führt eine Rohbewegung in XY um eine bestimmte Strecke aus (ggf. in Teilstücke)
 void CNC_Controler::raw_xy(float mm){
 
     float calls = mm / static_cast<float>(MAX_DISTANCE);
@@ -60,8 +63,6 @@ void CNC_Controler::raw_xy(float mm){
 
     x_pos += mm * x_pitch;
     y_pos += mm * y_pitch;
-    printf("X Achse fährt %fmm mit %fmm/min\n",mm * abs(this->x_pitch), this->x_mm_min);
-    printf("Y Achse fährt %fmm mit %fmm/min\n",mm * abs(this->y_pitch), this->y_mm_min);
     // Bewege die Achsen in Schritten von MAX_DISTANCE
     for(;calls > 1; calls--){
         if(!this->x_axis.move(MAX_DISTANCE * x_pitch, this->x_mm_min))
@@ -76,9 +77,12 @@ void CNC_Controler::raw_xy(float mm){
 
     if(!this->y_axis.move(MAX_DISTANCE * calls * this->y_pitch, this->y_mm_min))
         printf("Error: y\n");
-
+    printf("X Achse fährt %fmm mit %fmm/min\n",mm * abs(this->x_pitch), this->x_mm_min);
+    printf("Y Achse fährt %fmm mit %fmm/min\n",mm * abs(this->y_pitch), this->y_mm_min);
 }
 
+
+// Kombinierte XY-Bewegung mit Geschwindigkeitsvorgabe
 void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
     if (this->endstop_hit)
         return;
@@ -98,8 +102,8 @@ void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
     if(distance == 0)
         return;
 
-    while (this->z_axis.is_moving())
-        tight_loop_contents();
+    //while (this->z_axis.is_moving())
+        //tight_loop_contents();
     
 
     while(this->stop_time_z > time_us_32())
@@ -108,6 +112,7 @@ void CNC_Controler::move_xy(float x_mm, float y_mm, float mm_min){
     this->raw_xy(distance);
 }
 
+// Bewegung der Z-Achse mit Zeitplanung und Zerlegung in Teilbewegungen
 void CNC_Controler::move_z(float mm, float mm_min){
 
     if (this->endstop_hit)
@@ -119,9 +124,10 @@ void CNC_Controler::move_z(float mm, float mm_min){
         mm -= this->z_pos;
     }
     
+    this->z_pos += mm;
     // Wenn sich x oder y bewegen, warte bis sie fertig sind
-    while(this->x_axis.is_moving() || this->y_axis.is_moving())
-        tight_loop_contents();
+    //while(this->x_axis.is_moving() || this->y_axis.is_moving())
+        //tight_loop_contents();
     
     // Wenn Theoretisch keine Bewegung stattfindet mach weiter
     #if DEBUG >2
@@ -151,7 +157,7 @@ void CNC_Controler::move_z(float mm, float mm_min){
         printf("Error: z\n");
 
 } 
-
+// Setzt die absolute Position intern (ohne Bewegung)
 void CNC_Controler::set_pos(float x, float y, float z){
     
     x_pos = x;
@@ -159,6 +165,7 @@ void CNC_Controler::set_pos(float x, float y, float z){
     z_pos = z;
 }
 
+// GCode-Programm aus dem Dateisystem auslesen und ausführen
 void CNC_Controler::run_programm(){
 
     FATFS fs;
@@ -323,6 +330,7 @@ void CNC_Controler::run_programm(){
     }
 }
 
+// Sofortiger Stopp aller Achsbewegungen
 void CNC_Controler::hard_stop(){
     this->stop_time_xy = time_us_32();
     this->stop_time_z = time_us_32();
@@ -331,6 +339,8 @@ void CNC_Controler::hard_stop(){
     this->z_axis.stop();
 
 }
+
+// Aktiviert oder deaktiviert die Spindel (nur Debug-Ausgabe)
 void CNC_Controler::activate_spindle(bool onoff){
     printf("%d",onoff);
 };
